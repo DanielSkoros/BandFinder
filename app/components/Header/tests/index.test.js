@@ -8,4 +8,9 @@ describe('<Header />', () => {
     const renderedComponent = shallow(<Header />);
     expect(renderedComponent.length).toEqual(1);
   });
+  it('renders div and ul', () => {
+    const renderedComponent = shallow(<Header />);
+    expect(renderedComponent.find('ul').children().length).toEqual(3);
+    expect(renderedComponent.find('.nav').length).toEqual(1);
+  });
 });
