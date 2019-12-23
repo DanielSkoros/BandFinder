@@ -1,12 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './style.scss';
+import TemporaryDrawer from '../Drawer/Drawer';
 
 class Header extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div className="header">
-        <div className="logo">BandFinder</div>
+        <div className="logo">
+          <Link to={'/'}>
+            BandFinder
+          </Link>
+        </div>
         <ul className="nav">
           <li className="nav__item">
             <Link to={'/explore'}>
@@ -24,6 +29,9 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
             </Link>
           </li>
         </ul>
+        <div className="nav__mobile">
+          <TemporaryDrawer />
+        </div>
       </div>
     );
   }
