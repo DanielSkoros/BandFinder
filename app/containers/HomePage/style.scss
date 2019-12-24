@@ -1,9 +1,9 @@
 .home-page {
-  
+
   h2 {
     font-size: 1.5em;
   }
-  
+
   section {
     margin: 3em auto;
 
@@ -28,5 +28,45 @@
   span.at-prefix {
     color: black;
     margin-left: 0.4em;
+  }
+
+  .home__image {
+    width:100vw;
+    height: 100vh;
+    background: url('https://i.ibb.co/w642zJW/back.jpg') no-repeat 85% 45%;
+    .home__headings {
+      position: relative;
+      top: 30%;
+      left: 10%;
+      h1 {
+        font-size: 3rem;
+      }
+      h2 {
+        padding: 7px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px){
+  .home__image {
+    width:100vw;
+    height: 100vh;
+    background: url('https://i.ibb.co/w642zJW/back.jpg') no-repeat 85% 45%;
+
+    .home__headings {
+      position: relative;
+      top: 30%;
+      left: 20%;
+      h1 {
+        font-size: 6rem !important;
+      }
+      h2 {
+        padding: 7px;
+        margin: 0;
+      }
+    }
   }
 }
